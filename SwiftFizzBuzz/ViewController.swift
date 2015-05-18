@@ -12,15 +12,22 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var numberLabel: UILabel!
     
-    let startAlert = UIAlertController(title: "New Game", message: "Fizz if divisable by 3.", preferredStyle: UIAlertControllerStyle.Alert)
+    let startAlert = UIAlertController(title: "New Game", message: "Fizz if divisable by 3. Buzz if divisable by 5. Fizz buzz if divisable by both.",preferredStyle: UIAlertControllerStyle.Alert)
+    
     let endAlert = UIAlertController(title: "Wrong choice", message: "You lost the game please try again", preferredStyle: UIAlertControllerStyle.Alert)
+    
     var currentNum = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         numberLabel.text = currentNum.description
-        startAlert.addAction(UIAlertAction(title: "Begin", style: UIAlertActionStyle.Default,handler: nil))
+        
         endAlert.addAction(UIAlertAction(title: "Start again", style: UIAlertActionStyle.Default,handler: nil))
+        
+        startAlert.addAction(UIAlertAction(title: "Begin", style: UIAlertActionStyle.Default,handler: nil))
+        
+    }
+    override func viewDidAppear(animated: Bool) {
         self.presentViewController(startAlert, animated: true, completion: nil)
     }
 
@@ -62,7 +69,6 @@ class ViewController: UIViewController {
             self.presentViewController(endAlert, animated: true, completion: nil)
             currentNum = 1
             numberLabel.text = currentNum.description
-            self.presentViewController(startAlert, animated: true, completion: nil)
         }
     }
     
