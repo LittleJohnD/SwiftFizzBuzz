@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DBA4F3F11B0A00C3008CD3E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4F3F01B0A00C3008CD3E6 /* AppDelegate.swift */; };
-		DBA4F3F41B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBA4F3F21B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodeld */; };
 		DBA4F3F61B0A00C3008CD3E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA4F3F51B0A00C3008CD3E6 /* ViewController.swift */; };
 		DBA4F3F91B0A00C3008CD3E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA4F3F71B0A00C3008CD3E6 /* Main.storyboard */; };
 		DBA4F3FB1B0A00C3008CD3E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA4F3FA1B0A00C3008CD3E6 /* Images.xcassets */; };
@@ -30,7 +29,6 @@
 		DBA4F3EB1B0A00C3008CD3E6 /* SwiftFizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA4F3EF1B0A00C3008CD3E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA4F3F01B0A00C3008CD3E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBA4F3F31B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftFizzBuzz.xcdatamodel; sourceTree = "<group>"; };
 		DBA4F3F51B0A00C3008CD3E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBA4F3F81B0A00C3008CD3E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA4F3FA1B0A00C3008CD3E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				DBA4F3F71B0A00C3008CD3E6 /* Main.storyboard */,
 				DBA4F3FA1B0A00C3008CD3E6 /* Images.xcassets */,
 				DBA4F3FC1B0A00C3008CD3E6 /* LaunchScreen.xib */,
-				DBA4F3F21B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodeld */,
 				DBA4F3EE1B0A00C3008CD3E6 /* Supporting Files */,
 			);
 			path = SwiftFizzBuzz;
@@ -217,7 +214,6 @@
 			files = (
 				DBA4F3F61B0A00C3008CD3E6 /* ViewController.swift in Sources */,
 				DBA4F3F11B0A00C3008CD3E6 /* AppDelegate.swift in Sources */,
-				DBA4F3F41B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +405,7 @@
 				DBA4F40F1B0A00C3008CD3E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBA4F4101B0A00C3008CD3E6 /* Build configuration list for PBXNativeTarget "SwiftFizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -417,21 +414,9 @@
 				DBA4F4121B0A00C3008CD3E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DBA4F3F21B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DBA4F3F31B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodel */,
-			);
-			currentVersion = DBA4F3F31B0A00C3008CD3E6 /* SwiftFizzBuzz.xcdatamodel */;
-			path = SwiftFizzBuzz.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DBA4F3E31B0A00C2008CD3E6 /* Project object */;
 }
